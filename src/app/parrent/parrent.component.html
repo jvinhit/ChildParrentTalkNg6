@@ -1,0 +1,14 @@
+<div *ngIf="persons">
+    <div *ngFor="let item of persons; let i = index;">
+        <h2> {{ i }} -
+            <span [style.color]="i % 2 == 0 ? 'red': 'blue' "> {{ item.username }}</span>
+        </h2>
+        <app-switches (change)="handleChange($event, i)" [checked]="item.rounded"></app-switches>
+        <app-child [avatarURL]="item.profile_image" [round-eds]="item.rounded">
+
+        </app-child>
+        <p>
+            {{ item.title}}
+        </p>
+    </div>
+</div>
