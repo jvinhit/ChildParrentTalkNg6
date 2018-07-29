@@ -3,7 +3,7 @@
         <h2> {{ i }} -
             <span [style.color]="i % 2 == 0 ? 'red': 'blue' "> {{ item.username }}</span>
         </h2>
-        <app-switches (change)="handleChange($event, i)" [checked]="item.rounded"></app-switches>
+        <app-switches (checkedChanged)="handleChange($event, i)" [checked]="item.rounded"></app-switches>
         <app-child [avatarURL]="item.profile_image" [round-eds]="item.rounded">
 
         </app-child>
