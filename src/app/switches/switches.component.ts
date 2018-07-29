@@ -19,4 +19,7 @@ export class SwitchesComponent implements OnInit {
         // console.log(event.target.checked);
         this.change.emit(event.target.checked);
     }
+    toggle() {
+        this.checked = !this.checked;
+    }
 }

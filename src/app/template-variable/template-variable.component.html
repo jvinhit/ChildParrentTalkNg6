@@ -1,0 +1,8 @@
+<div>
+    <p *ngIf="username"> {{ message }} </p>
+    <input type="text" #username>
+    <button (click)="onClick(username.value)">Show Message </button>
+    <div>
+        <app-switches #switches></app-switches>
+    </div>
+</div>
