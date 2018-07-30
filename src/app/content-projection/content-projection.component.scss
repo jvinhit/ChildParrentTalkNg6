@@ -1,0 +1,19 @@
+.content-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .header {
+        background: red;
+        color: white;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 0;
+    }
+
+    hr {
+        margin: 0;
+        padding: 1px 0;
+        background-color: black;
+        box-shadow: 2px 2px 1px red;
+    }
+}

@@ -1,0 +1,8 @@
+<div class="content-wrapper">
+    <h2 class="header" (click)="toggleActive()"> {{ message }}</h2>
+    <p> {{ 1234.5 | currency:'VND' }}</p>
+    <ng-content *ngIf="isActive">
+        <!-- select="h3" selector with DOM tag, class selector, attribute selector-->
+
+    </ng-content>
+</div>
